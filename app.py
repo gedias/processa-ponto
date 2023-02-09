@@ -170,7 +170,7 @@ st.set_page_config(
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 st.title('Processamento de Ponto')
-st.write('Processamos arquivos de ponto no formato AFD')
+st.write('Processamos apenas arquivos de ponto no formato AFD')
 arquivo = st.file_uploader('Escolha um arquivo AFD')
 if 'arquivo' in locals() and arquivo is not None:
     if arquivo.type == 'text/plain':
