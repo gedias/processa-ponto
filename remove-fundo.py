@@ -10,7 +10,5 @@ if arquivo is not None:
     col1, col2 = st.columns([1,1])
     col1.image(open('imagem.jpeg','rb').read())
     open('imagem.png','wb').write(remove(open('imagem.jpeg','rb').read()))
-    # semfundo.save('imagem.png')
     col2.image('imagem.png')
     col2.download_button('Baixar imagem',open('imagem.png','rb').read(),arquivo.name.replace("jpeg","png").replace("jpg","png"))
-    # st.image(remove(imagem))
